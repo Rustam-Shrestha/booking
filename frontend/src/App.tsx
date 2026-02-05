@@ -5,8 +5,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout />} />
-        <Route path="/search" element={<>search page</>} />
+        <Route path="/" element={<Layout><h1>Home</h1></Layout>} />
+        <Route path="/search" element={<Layout><h1>Search</h1></Layout>} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
